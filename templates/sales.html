@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Add Sales{% endblock %}
+
+{% block content %}
+<h3>Add Sales Data</h3>
+
+<form method="post" action="/add_sale" class="w-50">
+    <input class="form-control mb-2" name="product_id" placeholder="Product ID">
+    <input class="form-control mb-2" type="date" name="date">
+    <input class="form-control mb-3" type="number" name="units_sold" placeholder="Units Sold">
+    <button class="btn btn-success">Add Sale</button>
+</form>
+{% endblock %}

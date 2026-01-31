@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Demand Prediction{% endblock %}
+
+{% block content %}
+<h3>📈 Demand Prediction</h3>
+
+<form method="post" class="w-25">
+    <input class="form-control mb-3" type="number" name="day" placeholder="Day (1–31)">
+    <button class="btn btn-warning">Predict</button>
+</form>
+
+{% if prediction %}
+<div class="alert alert-info mt-3">
+    Predicted Demand: <strong>{{ prediction }}</strong>
+</div>
+{% endif %}
+{% endblock %}
