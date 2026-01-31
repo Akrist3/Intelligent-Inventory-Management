@@ -3,26 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <title>Intelligent Inventory Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .card {
+            background: #ffffff;
+            max-width: 700px;
+            width: 90%;
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 32px;
+            color: #2c5364;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .tech {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0 30px;
+        }
+
+        .tech span {
+            background: #eef3f7;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #2c5364;
+            font-weight: 500;
+        }
+
+        .note {
+            background: #fff3cd;
+            color: #856404;
+            padding: 14px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #2c5364;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: #203a43;
+        }
+
+        .btn-secondary {
+            border: 2px solid #2c5364;
+            color: #2c5364;
+            background: transparent;
+        }
+
+        .btn-secondary:hover {
+            background: #2c5364;
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-    <h1>Intelligent Inventory Management System</h1>
 
-    <p>
-        This project is built using <strong>Python, Flask, MySQL, and Machine Learning</strong>.
-    </p>
+    <div class="card">
+        <h1>📦 Intelligent Inventory Management System</h1>
+        <p class="subtitle">
+            A Machine Learning–powered inventory solution built with Python & Flask
+        </p>
 
-    <p>
-        ⚠️ This is a backend-based application and cannot run on GitHub Pages.
-    </p>
+        <div class="tech">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>MySQL</span>
+            <span>Machine Learning</span>
+            <span>Linear Regression</span>
+            <span>Bootstrap UI</span>
+        </div>
 
-    <p>
-        👉 To run the project, please clone the repository and execute it locally.
-    </p>
+        <div class="note">
+            ⚠️ This is a backend-based Flask application and cannot run on GitHub Pages.
+            <br>
+            Please clone the repository and run it locally.
+        </div>
 
-    <p>
-        <a href="https://github.com/Akrist3/Intelligent-Inventory-Management">
-            View Source Code on GitHub
-        </a>
-    </p>
+        <div class="buttons">
+            <a class="btn-primary" href="https://github.com/Akrist3/Intelligent-Inventory-Management">
+                View Source Code
+            </a>
+            <a class="btn-secondary" href="https://github.com/Akrist3/Intelligent-Inventory-Management#readme">
+                Read Documentation
+            </a>
+        </div>
+
+        <footer>
+            Developed by <strong>Akrist</strong> | B.Tech | Python & ML
+        </footer>
+    </div>
+
 </body>
 </html>
